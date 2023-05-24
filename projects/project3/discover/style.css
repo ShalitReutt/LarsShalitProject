@@ -1,7 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Heebo:wght@700&display=swap');
+
 body {
     direction: rtl;
-    background-color: #E5EEFF;
+    background-color: #e5eeff;
     text-align: center;
+    font-family: "assistant";
+}
+
+h1 {
+    color: #0EE1DA;
+    margin-top: 33%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+p {
+    color: #F9F9F9;
+    padding: 0 30px;
+    font-weight: 200;
+}
+
+label {
+    color: #0EE1DA;
+    display: block;
+    text-align: right;
+    position: relative;
+    top: 15px;
+    font-family: "heebo";
+}
+
+input {
+    border: none;
+    border-bottom: 4px solid #0EE1DA;
+    width: 350px;
+    margin-top: 20px;
+}
+
+#name, #mail {
+    height: 40px;
+}
+
+#xp {
+    height: 142px;
+}
+
+button {
+    font-weight: bold;
+    font-size: larger;
+    width: 360px;
+    background-color: #0EE1DA;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    font-family: "heebo";
+}
+
+form {
+    padding: 26px;
 }
 
 .frame {
@@ -10,6 +70,7 @@ body {
     grid-template-columns: repeat(4, 200px);
     grid-template-rows: repeat(6, 200px);
     gap: 10px;
+    margin: 100px 0;
 }
 
 .frame>div {
@@ -23,59 +84,59 @@ body {
 }
 
 .frame>div:nth-child(2) {
-    background-image: url('images/Rectangle 506-1@2x.png');
+    background-image: url('images/1.png');
 }
 
 .frame>div:nth-child(3) {
-    background-image: url('images/Rectangle 506-2@2x.png');
+    background-image: url('images/2.png');
 }
 
 .frame>div:nth-child(4) {
-    background-image: url('images/Rectangle 506-3@2x.png');
+    background-image: url('images/3.png');
 }
 
 .frame>div:nth-child(5) {
-    background-image: url('images/Rectangle 506-4@2x.png');
+    background-image: url('images/4.png');
 }
 
 .frame>div:nth-child(6) {
-    background-image: url('images/Rectangle 506-5@2x.png');
+    background-image: url('images/5.png');
 }
 
 .frame>div:nth-child(7) {
-    background-image: url('images/Rectangle 506-6@2x.png');
+    background-image: url('images/6.png');
 }
 
 .frame>div:nth-child(8) {
-    background-image: url('images/Rectangle 506-7@2x.png');
+    background-image: url('images/7.png');
 }
 
 .frame>div:nth-child(9) {
-    background-image: url('images/Rectangle 506-8@2x.png');
+    background-image: url('images/8.png');
 }
 
 .frame>div:nth-child(10) {
-    background-image: url('images/Rectangle 506-9@2x.png');
+    background-image: url('images/9.png');
 }
 
 .frame>div:nth-child(11) {
-    background-image: url('images/Rectangle 506@2x.png');
+    background-image: url('images/10.png');
 }
 
 .frame>div:nth-child(12) {
-    background-image: url('images/Rectangle 513@2x.png');
+    background-image: url('images/11.png');
 }
 
 .frame>div:nth-child(13) {
-    background-image: url('images/Rectangle 514@2x.png');
+    background-image: url('images/12.png');
 }
 
 .frame>div:nth-child(14) {
-    background-image: url('images/Rectangle 515@2x.png');
+    background-image: url('images/13.png');
 }
 
 .frame>div:nth-child(15) {
-    background-image: url('images/Rectangle 516@2x.png');
+    background-image: url('images/14.png');
 }
 
 .frame>div:last-child {
@@ -84,15 +145,158 @@ body {
     background-color: #8E097C;
 }
 
-@media (max-width: 767px) {
+main {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
     .frame {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(11, 200px);
+        display: none;
     }
 
-    .frame>div:last-child {
-        grid-column: 1 / 3;
-        grid-row: 10 / 12;
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        display: block;
+    }
+
+    header {
+        width: 100%;
+        height: 340px;
+        background-color: #020253;
+    }
+
+    h1 {
+        margin: 0;
+        padding-top: 30%;
+    }
+
+    header>p {
+        padding: 0 50px;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    h2 {
+        padding-top: 15px;
+    }
+
+    div>p {
+        padding: 0 20px;
+        margin-bottom: 0;
+    }
+
+    input {
+        width: 250px;
+        padding: 0 10px;
+    }
+
+    #name, #mail {
+    height: 30px;
+    margin: 0;
+    margin: 5px 0;
+    }
+
+    #xp {
+        height: 75px;
+        position: relative;
+        bottom: 10px;
+    }
+
+    #xpl {
+        position: relative;
+        top: 8px;
+    }
+
+    label {
+        position: relative;
+        top: 0px;
+        font-size: 10px;
+        padding-right: 5px;
+    }
+
+    button {
+        width: 270px;
+        height: 30px;
+        margin: 0;
     }
 }
+
+.frameMobile {
+    display: inline-grid;
+    grid-template-rows: repeat(8, 145px);
+    grid-template-columns: repeat(2, 160px);
+    gap: 10px;
+    height: 1540px;
+    margin: 30px 0;
+}
+
+.frameMobile>div {
+    background-size: cover;
+}
+
+.frameMobile>div:nth-child(1) {
+    background-image: url('images/1.png');
+}
+
+.frameMobile>div:nth-child(2) {
+    background-image: url('images/2.png');
+}
+
+.frameMobile>div:nth-child(3) {
+    background-image: url('images/3.png');
+}
+
+.frameMobile>div:nth-child(4) {
+    background-image: url("images/4.png");
+}
+
+.frameMobile>div:nth-child(5) {
+    background-image: url('images/5.png');
+}
+
+.frameMobile>div:nth-child(6) {
+    background-image: url('images/6.png');
+}
+
+.frameMobile>div:nth-child(7) {
+    background-image: url('images/7.png');
+}
+
+.frameMobile>div:nth-child(8) {
+    background-image: url('images/8.png');
+}
+
+.frameMobile>div:nth-child(9) {
+    background-color: #8E097C;
+    grid-column: 1 / 3;
+    grid-row: 5 / 8;
+}
+
+.frameMobile>div:nth-child(10) {
+    background-image: url('images/9.png');
+}
+
+.frameMobile>div:nth-child(11) {
+    background-image: url('images/10.png');
+}
+
+.frameMobile>div:nth-child(12) {
+    background-image: url('images/11.png');
+}
+
+.frameMobile>div:nth-child(13) {
+    background-image: url('images/12.png');
+}
+
+.frameMobile>div:nth-child(14) {
+    background-image: url('images/13.png');
+}
+
+.frameMobile>div:last-child {
+    background-image: url('images/14.png');
+} 
