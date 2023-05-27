@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "heebo", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.cellphone {
+  background-image: url(images/cell.png);
+  background-size: cover;
+  position: absolute;
+  top: 60px;
+  left: 1000px;
+  width: 400px;
+  height: 570px;
+}
+
+.back {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #FDBD03;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 1px;
+  right: 0;
+  left: 1px;
+  margin: auto;
+  transition: 0.5s;
+}
+.icon:hover {
+  scale: 1.2;
+}
+
+.top {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.whatsapp {
+  background-image: url(images/whatsapp.svg);
+  background-size: cover;
+}
+
+.line1 {
+  background-color: #FDBD03;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 340px;
+  height: 15px;
+}
+
+.line2 {
+  background-color: #FDBD03;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 840px;
+  height: 15px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #FDBD03;
+  position: absolute;
+  left: 640px;
+  top: 110px;
+}
+
+p {
+  color: #020253;
+  position: absolute;
+  left: 580px;
+  top: 190px;
+}/*# sourceMappingURL=style.css.map */
