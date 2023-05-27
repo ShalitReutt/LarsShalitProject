@@ -10,7 +10,7 @@ body {
   background-size: cover;
   position: absolute;
   top: 60px;
-  left: 1000px;
+  right: 8%;
   width: 400px;
   height: 570px;
 }
@@ -20,6 +20,9 @@ body {
   height: 60px;
   border-radius: 50%;
   background-color: #FDBD03;
+}
+.back > div {
+  background-size: cover;
 }
 
 .icon {
@@ -45,7 +48,6 @@ body {
 
 .whatsapp {
   background-image: url(images/whatsapp.svg);
-  background-size: cover;
 }
 
 .line1 {
@@ -67,16 +69,193 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 45px;
   color: #FDBD03;
   position: absolute;
-  left: 640px;
+  right: 45%;
   top: 110px;
 }
 
 p {
   color: #020253;
   position: absolute;
-  left: 580px;
-  top: 190px;
+  right: 45%;
+  top: 195px;
+  width: 300px;
+  font-size: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: #2C2C2C;
+  display: block;
+  font-size: 14px;
+}
+
+input {
+  background-color: #E5EEFF;
+  border: 0;
+  border-bottom: 4px solid #FDBD03;
+}
+
+form {
+  position: absolute;
+  top: 280px;
+  right: 45%;
+  width: 110px;
+  height: 315px;
+}
+
+#name {
+  width: 340px;
+  height: 35px;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+#mail {
+  width: 340px;
+  height: 35px;
+  position: relative;
+  bottom: 61px;
+  right: 360px;
+}
+
+#mailLabel {
+  position: relative;
+  bottom: 61px;
+  right: 360px;
+}
+
+#words {
+  width: 700px;
+  height: 100px;
+  position: relative;
+  bottom: 50px;
+}
+
+#wordsLabel {
+  position: relative;
+  bottom: 50px;
+}
+
+button {
+  background-color: #FDBD03;
+  width: 140px;
+  height: 40px;
+  border: 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#icons {
+  position: absolute;
+  left: 30px;
+  bottom: 40px;
+  width: 300px;
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.bottom {
+  position: relative !important;
+  top: 15px;
+}
+
+.phone {
+  background-image: url(images/phone.svg);
+}
+
+.linkedin {
+  background-image: url(images/linkedin.svg);
+  width: 29px;
+}
+
+.instagram {
+  background-image: url(images/instagram.webp);
+}
+
+.facebook {
+  background-image: url(images/facebook.svg);
+  width: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .cellphone {
+    position: absolute;
+    top: 7%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80px;
+    height: 20%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .top {
+    display: none;
+  }
+  .line1 {
+    width: 80%;
+  }
+  .line2 {
+    width: 100%;
+  }
+  h1 {
+    font-size: 40px;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 187px;
+    height: 59px;
+  }
+  p {
+    font-size: 15px;
+    position: absolute;
+    top: 33%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-weight: 500;
+  }
+  form {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 70%;
+  }
+  label {
+    font-size: 10px;
+    position: relative;
+  }
+  input {
+    width: 100% !important;
+    margin: 5% 0;
+  }
+  #name, #mail, #words, #wordsLabel, #mailLabel {
+    position: static;
+  }
+  button {
+    display: block;
+    width: 102%;
+  }
+  #icons {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+@media screen and (max-height: 750px) {
+  #icons {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
