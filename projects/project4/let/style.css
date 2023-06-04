@@ -88,3 +88,22 @@ input {
         width: 100%;
     }
 }
+
+@media screen and (max-width: 370px) {
+    .img {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 630px) {
+    .img {
+        height: 360px;
+    }
+}
+
+@media screen and (max-width: 1241px) and (min-width: 768px) {
+    header {
+        width: %;
+    }
+}
