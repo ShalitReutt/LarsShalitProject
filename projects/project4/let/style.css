@@ -3,6 +3,8 @@
 body {
     font-family: "assistant";
     max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -15,7 +17,7 @@ header {
 
 h1 {
     color: #D3E10E;
-    margin-top: 9% !important;
+    margin-top: 5% !important;
     font-weight: bold !important;
 }
 
@@ -46,9 +48,11 @@ input {
 }
 
 .pc {
-    position: relative;
-    right: 170px;
-    max-width: 1150px;
+    position: absolute;
+    right: 0;
+    left: -18%;
+    bottom: 10%;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -102,8 +106,3 @@ input {
     }
 }
 
-@media screen and (max-width: 1241px) and (min-width: 768px) {
-    header {
-        width: %;
-    }
-}
