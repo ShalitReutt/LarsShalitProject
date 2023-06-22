@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    width: 100vmin;
+    height: 100vmin;
+    border: 1px solid violet;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.game {
+    --cell-size: 15vmin;
+    --cell-gap: 2vmin;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, var(--cell-size));
+    grid-template-rows: repeat(4, var(--cell-size));
+    gap: var(--cell-gap);
+    border-radius: 1vmin;
+}
+
+.cell {
+    background-color: yellowgreen;
+    border-radius: 1vmin;
+}
+
+h1 {
+    font-size: 8vmin;
+    padding-bottom: 8vmin;
+}
+
+.tile {
+    --y: 1;
+    --x: 2;
+    position: absolute;
+    top: calc(var(--y) * (var(--cell-size) + var(--cell-gap)));
+    left: calc(var(--x) * (var(--cell-size) + var(--cell-gap)));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border-radius: 1vmin;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7.5vmin;
+    font-weight: bold;
+    background-color: #fff;
+    color: black;
+    transition: 100ms;
+    animation: show 200ms;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0.5;
+        transform: scale(0);
+    }
+}
