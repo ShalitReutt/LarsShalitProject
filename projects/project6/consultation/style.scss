@@ -8,12 +8,13 @@ body {
 
 .cellphone {
     background-image: url(images/cell.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
-    top: 60px;
+    top: 7%;
     right: 8%;
-    width: 400px;
-    height: 570px;
+    width: 26%;
+    height: 65%;
 }
 
 .back {
@@ -268,8 +269,16 @@ button {
     }
 }
 
-@media screen and (max-height: 750px) {
+@media screen and (max-height: 777px) {
     #icons {
-        display: none;
+        display: none !important;
     }
 }
+
+// @media screen and (min-width: 580px) and (max-width: 768px) {
+//     #icons {
+//         align-items: end;
+//         flex-direction: column;
+//         margin: 0;
+//     }
+// }
