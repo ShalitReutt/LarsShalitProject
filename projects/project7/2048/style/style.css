@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(images/background.jpg);
+    background-image: url(../images/background.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -16,23 +16,25 @@ body {
 main {
     width: 100vmin;
     height: 100vmin;
-    border: 1px solid violet;
-    background-color: pink;
+    
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.game {
-    --cell-size: 15vmin;
+#game {
+    --cell-size: 16vmin;
     --cell-gap: 2vmin;
+    padding: var(--cell-gap);
     position: relative;
     display: grid;
     grid-template-columns: repeat(4, var(--cell-size));
     grid-template-rows: repeat(4, var(--cell-size));
     gap: var(--cell-gap);
     border-radius: 1vmin;
+    border: 0.5vmin solid violet;
+    background-color: pink;
 }
 
 .cell {
@@ -46,8 +48,8 @@ h1 {
 }
 
 .tile {
-    --y: 1;
-    --x: 2;
+    --y: 1.111111;
+    --x: 2.111111;
     position: absolute;
     top: calc(var(--y) * (var(--cell-size) + var(--cell-gap)));
     left: calc(var(--x) * (var(--cell-size) + var(--cell-gap)));
