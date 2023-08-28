@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: transparent linear-gradient(62deg, #071192 0%, #F81E70 100%);
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 80vmin;
+    height: 80vmin;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    box-shadow: 5px 5px 15px #00000029;
+}
+
+#addBtn {
+    width: 13vmin;
+    height: 4vmin;
+    background-color: #D31C75;
+    color: white;
+    font-size: 2vmin;
+    border: 0;
+    position: absolute;
+    top: 28%;
+    right: 16%;
+    transition: 0.3s;
+
+    &:hover {
+        scale: 0.95;
+    }
+
+    &:active {
+        color: black;
+        scale: 0.85;
+    }
+}
+
+hr {
+    width: 55vmin;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 40%;
+    margin: auto;
+}
+
+#taskName {
+    position: absolute;
+    left: 16%;
+    top: 28%;
+    width: 40vmin;
+    height: 4vmin;
+    border: 0.2vmin solid #D31C75;;
+    font-size: 3vmin;
+}
+
+#taskLabel {
+    position: absolute;
+    top: 25%;
+    left: 16%;
+    color: #2C2C2C;
+    font-weight: bold;
+    font-size: 2vmin;
+}
+
+h1 {
+    font-size: 3.5vmin;
+    position: absolute;
+    left: 15%;
+    top: 5%;
+    color: #2C2C2C;
+}
+
+p {
+    font-size: 2.5vmin;
+    color: #2C2C2C;
+    position: absolute;
+}
+
+#completeNum {
+    top: 12%;
+    left: 15%;
+}
+
+#incompleteNum {
+    top: 16%;
+    left: 15%;
+}
+
+#taskList {
+    display: grid;
+    grid-template-rows: repeat(7, 5vmin);
+    grid-template-columns: repeat(3, 17.5vmin);
+    gap: 1.5vmin;
+    position: absolute;
+    top: 43%;
+    left: 15%;
+}
+
+.task {
+    position: relative;
+    border: 0.2vmin solid #D31C75;;
+}
+
+.deleteBtn {
+    color: red;
+    background: none;
+    border: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 2vmin;
+    transition: 0.1s;
+
+    &:active {
+        scale: 0.5;
+    }
+}
+
+span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10%;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    font-size: 2vmin;
+}
+
+.taskCheckbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.editBtn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 1.5vmin;
+    font-size: 1vmin;
+    background-color: #D31C75;
+    color: white;
+    border: none;
+
+    &:active {
+        color: black;
+    }
+}
+
+.complete {
+    color: grey;
+}
+
+@media screen and (max-width: 768px) {
+    .mobileBackground {
+        background: transparent linear-gradient(62deg, #071192 0%, #F81E70 100%);
+        width: 100%;
+        height: 50vmin;
+    }
+
+    html {
+        background: none;
+    }
+
+    main {
+        width: 90%;
+        height: 85%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    hr {
+        width: 70%;
+    }
+
+    #taskList {
+        grid-template-rows: repeat(7, 6vmin);
+        grid-template-columns: repeat(3, 20vmin);
+    }
+
+    h1 {
+        left: 32%;
+        font-size: 7vmin;
+    }
+
+    #addBtn {
+        width: 74%;
+        top: 32%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #taskName {
+        width: 70%;
+        top: 25%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #taskLabel {
+        top: 22%;
+        font-size: 3vmin;
+    }
+
+    p {
+        font-size: 4vmin;
+    }
+}

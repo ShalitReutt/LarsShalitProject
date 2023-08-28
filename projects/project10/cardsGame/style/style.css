@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-image: url(../images/background.jpg);
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(5, 10vmin);
+    gap: 6vmin;
+    width: max-content;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 5vmin;
+}
+
+.card {
+    width: 15vmin;
+    height: 20vmin;
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transition: transform 0.5s;
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+.matched {
+    visibility: hidden;
+}
+
+button {
+    margin-top: 5vmin;
+    width: max-content;
+    background-color: #fbf4ac;
+    border-radius: 1vmin;
+    border: 0.5vmin solid violet;
+    font-weight: bold;
+    font-size: 4vmin;
+    transition: 0.5s;
+    &:hover {
+        background-color: pink;
+        scale: 1.05;
+    }
+}
+
+#timer, #pairs-guessed {
+    margin-top: 10px;
+}
+
+.card.flip {
+    transform: perspective(1000px) rotateY(180deg);
+}
+
+.card > div {
+    position: absolute;
+    width: 15vmin;
+    height: 20vmin;
+    backface-visibility: hidden;
+    background-image: url('../images/logo.png');
+    background-size: cover;
+    background-color: #f3e975;
+    border: 0.3vmin solid violet;
+}
+
+.card > .front {
+    transform: rotateY(0deg);
+}
+
+.card > .back {
+    transform: rotateY(180deg);
+}
+
+h1 {
+    width: max-content;
+    font-size: 8vmin;
+    margin-bottom: 1vmin;
+    color: black;
+    margin: auto;
+    background-color: #f3e975;
+    border: 0.3vmin solid violet;
+}
+
+h2 {
+    width: max-content;
+    font-size: 5vmin;
+    margin-bottom: 1vmin;
+    color: black;
+    margin: auto;
+    background-color: #f3e975;
+    border: 0.3vmin solid violet;
+}
