@@ -8,5 +8,6 @@ The site is a project that was made by using: HTML, CSS, Bootstrap, SASS, JavaSc
 ---
 Last release 27/08/2023, added JS Pojects.
 --- 
+--- 
 ### copyright
 2023 Lars Shalit All Rights Reserved
